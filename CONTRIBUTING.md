@@ -1,1 +1,1 @@
-Please do not change or request a merge. This is a personal project and dont want to change any code
+Please help improve the UI or you can copy and improve it yourself
