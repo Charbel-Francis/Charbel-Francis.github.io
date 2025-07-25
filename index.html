@@ -32,7 +32,93 @@
 		"images\profile-svgrepo-com.svg" 
 				type = "image/x-icon">
 </head>
-
+<style>
+    .cd-container {
+        position: relative;
+        width: 90%;
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 2em 0;
+    }
+    
+    .cd-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 18px;
+        height: 100%;
+        width: 4px;
+        background: #d7e4ed;
+    }
+    
+    .cd-timeline-block {
+        position: relative;
+        margin: 2em 0;
+    }
+    
+    .cd-timeline-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .cd-timeline-img img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        padding: 0;
+        background-color: white;
+    }
+    
+    .cd-timeline-content {
+        position: relative;
+        margin-left: 60px;
+        background: #f8f9fb;
+        border-radius: 0.25em;
+        padding: 1em;
+        box-shadow: 0 3px 0 #d7e4ed;
+    }
+    
+    .cd-timeline-content::before {
+        content: '';
+        position: absolute;
+        top: 16px;
+        right: 100%;
+        height: 0;
+        width: 0;
+        border: 7px solid transparent;
+        border-right: 7px solid #f8f9fb;
+    }
+    
+    .timeline_title {
+        color: royalblue;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin: 0 0 0.5em 0;
+    }
+    
+    .timeline_text {
+        margin: 0.5em 0;
+        line-height: 1.6;
+        color: #333;
+    }
+    
+    .cd-date {
+        font-size: 0.9em;
+        color: #94a3b8;
+        margin-top: 1em;
+        font-weight: normal;
+    }
+</style>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target nav-test"
 		id="ftco-navbar">
@@ -150,7 +236,8 @@
 								About Me
 							</h2>
 							<p>
-								I graduated from Varsity College in 2024 with a Bachelor of Computer and Information Science in Application Development. I now work full-time as a Python Django developer, while also exploring game development and graphic design as hobbies. I'm passionate about creativity, whether it's through innovative ideas, drawing, or video games. My goal is to change the world through storytelling and continuously discover new ways to improve myself and those around me through technology.
+								I am currently a student at Varsity College studying Bachelor of Computer and information Science in
+								Appication Development, working part-time jobs to gain experience.
 							</p>
 							<span class="subheading">Life Philosophy</span>
 							<h5 class="test centre_text" data-hover="What has a problem, always has a solution"
@@ -260,8 +347,8 @@
 						</span>
 						<div class="desc">
 							<h3 class="mb-5"><a href="#">Exploring</a></h3>
-							<h4 style="color: darkslategray;">Drawing</h4>
-							<h4 style="color: darkslategray;">Game design</h4>
+							<h4 style="color: darkslategray;">Graphics Design, Blender Creations</h4>
+							<h4 style="color: darkslategray;">Game design, Untity 2.5D Environments, Unreal-Engine</h4>
 							<h4 style="color: darkslategray;">Video Editing</h4>
 						</div>
 					</div>
@@ -273,9 +360,9 @@
 						</span>
 						<div class="desc">
 							<h3 class="mb-5"><a href="#">Creating</a></h3>
-							<h4 style="color: darkslategray;">User Interface</h4>
-							<h4 style="color: darkslategray;">Mobile Apps</h4>
-							<h4 style="color: darkslategray;">Websites</h4>
+							<h4 style="color: darkslategray;">User Interface, Blender Animation, World Generation</h4>
+							<h4 style="color: darkslategray;">Mobile Apps, Splash Screen Animations, Loading Animations</h4>
+							<h4 style="color: darkslategray;">Websites, Styling and Animations</h4>
 						</div>
 					</div>
 				</div>
@@ -285,10 +372,10 @@
 							<i class="flaticon-ideas"></i>
 						</span>
 						<div class="desc">
-							<h3 class="mb-5"><a href="#">Learning or Wanting to Learn</a></h3>
-							<h4 style="color:darkslategray;">PHP</h4>
-							<h4 style="color: darkslategray;">Machine Learning</h4>
-							<h4 style="color: darkslategray;">Database</h4>
+							<h3 class="mb-5"><a href="#">Langauges , Frameworks and Algorithms</a></h3>
+							<h4 style="color:darkslategray;">PHP, Python, Javascript, Java, C#, C++, GoLang</h4>
+							<h4 style="color: darkslategray;">MERN, Next.js, Vue.js, ASP.NET, Django</h4>
+							<h4 style="color: darkslategray;">Metaheuristic, Machine Learning/Neural Netowrks</h4>
 						</div>
 					</div>
 				</div>
@@ -303,7 +390,7 @@
 				data-stellar-background-ratio="0.5">
 				<div class="row">
 					<div class="col-md-4 text-center counter-margin ">
-						<span class="colorlib-counter-label">Cups of coffee</span>
+						<span class="colorlib-counter-label">Litres of Water</span>
 						<div class="counter" data-count="500"
 							style="text-align: center; font-family: Poppins, Arial, sans-serif; ">
 							0
@@ -311,14 +398,14 @@
 					</div>
 					<div class="col-md-4 text-center counter-margin">
 						<span class="colorlib-counter-label">Projects</span>
-						<div class="counter" data-count="0" style=" align-content: center;   font-family: Poppins, Arial, sans-serif;
+						<div class="counter" data-count="5" style=" align-content: center;   font-family: Poppins, Arial, sans-serif;
 							">
-							0
+							5
 						</div>
 					</div>
 					<div class="col-md-4 text-center counter-margin ">
 						<span class="colorlib-counter-label">Lines of Code</span>
-						<div class="counter" data-count="10000" style=" align-content: center;   font-family: Poppins, Arial, sans-serif;
+						<div class="counter" data-count="200000" style=" align-content: center;   font-family: Poppins, Arial, sans-serif;
 								">
 							0
 						</div>
@@ -344,72 +431,84 @@
 			</div>
 
 			<body>
-				<div id="cd-timeline" class="cd-container">
-					<!-- cd-timeline-block -->
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-XhumaTech" style="background-color:white;">
-							<img src="images/Wrensch.png" alt="Avatar" style="padding-top:2em;" />
-						</div>
-						<div class="cd-timeline-content" style="background-color: #f8f9fb">
-							<h6_black class="timeline_title" style="color: royalblue">Software Development Engineer </h6_black>
-							<h6_black class="timeline_text">Helping to build an accounting service for Megryan Financial Services, at Wrench Tech
-							</h6_black>
-							<h5 class="timeline_text cd-date">Oct 2022</h5>
-						</div>
-					</div>
-					<!-- cd-timeline-block -->
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-varsity_college"style="background-color:white;">
-							<img src="images/varsity_college.png" alt="Avatar"  style="padding-top: 2em; background-color: white;  border-radius: 60%"/>
-						</div>
-						<div class="cd-timeline-content" style="background-color: #f8f9fb"  >
-							<h6_black class="timeline_title" style="color: royalblue">First Year</h6_black>
-							<h6_black class="timeline_text">Began my first year of my current degree at IIE Varsity College for 
-								<b> IIE  Bachelor of Computer and information Science in
-									Appication Development</b> and would be completed in 2024
-							<h5 class="timeline_text cd-date">Feb 2022</h5>
-						</div>
-					</div>
-					<!-- cd-timeline-block -->
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-varsity_collge">
-							<img src="images/varsity_college.png" alt="Avatar"  style="padding-top: 2em; background-color: white;  border-radius: 60%"/>
-						</div>
-						<div class="cd-timeline-content" style="background-color: #f8f9fb">
-							<h6_black class="timeline_title" style="color: royalblue">Finished My degree</h6_black>
-							<h6_black class="timeline_text">Finished my  IIE Higher Certifcate in Support Services degree at IIE Varsity College
-							</h6_black>
-							<h5 class="timeline_text cd-date">Dec 2021</h5>
-						</div>
-					</div>
-					<!-- cd-timeline-block -->
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-black" style="background-color: white;">
-							<img src="images/DELEGATE-IT.jpg" alt="Avatar"  style="padding-top: 1em; background-color: white;  border-radius: 40%"/>
-						</div>
-						<div class="cd-timeline-content" style="background-color: #f8f9fb">
-							<h6_black class="timeline_title" style="color: royalblue">Software Developer
-							</h6_black>
-							<h6_black class="timeline_text">Worked for about a year as a  <b>Software Developer</b> at
-								<b style="color: rgb(36, 35, 35)">DelegateIT</b>
-							</h6_black>
-							<h5 class="timeline_text cd-date">June 2021</h5>
-						</div>
-					</div>
-					<!-- cd-timeline-block -->
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-varsity_collge">
-							<img src="images/varsity_college.png" alt="Avatar"  style="padding-top: 2em; background-color: white;  border-radius: 60%"/>
-						</div>
-						<div class="cd-timeline-content" style="background-color: #f8f9fb">
-							<h6_black class="timeline_title" style="color: royalblue">Began My degree</h6_black>
-							<h6_black class="timeline_text">Began my  IIE Higher Certifcate in Support Services degree at IIE Varsity College
-							</h6_black>
-							<h5 class="timeline_text cd-date">Feb 2021</h5>
-						</div>
-					</div>
-				</div>
-			</body>
+    <div id="cd-timeline" class="cd-container">
+        <!-- cd-timeline-block -->
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-varsity_collge">
+                <img src="images/bsharp.jpg" alt="Avatar" style="padding-top: 2em; background-color: white; border-radius: 60%"/>
+            </div>
+            <div class="cd-timeline-content" style="background-color: #f8f9fb">
+                <h2 class="timeline_title" style="color: royalblue">Bsharp</h2>
+                <p class="timeline_text">Began and continuing my Journey at BSharp, a tax compliance application built for accountants!</p>
+                <h5 class="timeline_text cd-date">Jan 2025 to Present</h5>
+            </div>
+        </div>
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-varsity_collge">
+                <img src="images/varsity_college.png" alt="Avatar" style="padding-top: 2em; background-color: white; border-radius: 60%"/>
+            </div>
+            <div class="cd-timeline-content" style="background-color: #f8f9fb">
+                <h2 class="timeline_title" style="color: royalblue">Completed my Bachelor's Degree</h2>
+                <p class="timeline_text">Completed my <b>IIE Bachelor of Computer and Information Science in Application Development</b></p>
+                <h5 class="timeline_text cd-date">Dec 2024</h5>
+            </div>
+        </div>
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-XhumaTech" style="background-color:white;">
+                <img src="images/Wrensch.png" alt="Avatar" style="padding-top:2em;" />
+            </div>
+            <div class="cd-timeline-content" style="background-color: #f8f9fb">
+                <h2 class="timeline_title" style="color: royalblue">Software Development Engineer</h2>
+                <p class="timeline_text">Helping to build an accounting service for Megryan Financial Services, at Wrench Tech</p>
+                <h5 class="timeline_text cd-date">Oct 2022</h5>
+            </div>
+        </div>
+        <!-- cd-timeline-block -->
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-varsity_college" style="background-color:white;">
+                <img src="images/varsity_college.png" alt="Avatar" style="padding-top: 2em; background-color: white; border-radius: 60%"/>
+            </div>
+            <div class="cd-timeline-content" style="background-color: #f8f9fb">
+                <h2 class="timeline_title" style="color: royalblue">First Year</h2>
+                <p class="timeline_text">Began my first year of my current degree at IIE Varsity College for <b>IIE Bachelor of Computer and Information Science in Application Development</b> and would be completed in 2024</p>
+                <h5 class="timeline_text cd-date">Feb 2022</h5>
+            </div>
+        </div>
+        <!-- cd-timeline-block -->
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-varsity_collge">
+                <img src="images/varsity_college.png" alt="Avatar" style="padding-top: 2em; background-color: white; border-radius: 60%"/>
+            </div>
+            <div class="cd-timeline-content" style="background-color: #f8f9fb">
+                <h2 class="timeline_title" style="color: royalblue">Finished My Degree</h2>
+                <p class="timeline_text">Finished my IIE Higher Certificate in Support Services degree at IIE Varsity College</p>
+                <h5 class="timeline_text cd-date">Dec 2021</h5>
+            </div>
+        </div>
+        <!-- cd-timeline-block -->
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-black" style="background-color: white;">
+                <img src="images/DELEGATE-IT.jpg" alt="Avatar" style="padding-top: 1em; background-color: white; border-radius: 40%"/>
+            </div>
+            <div class="cd-timeline-content" style="background-color: #f8f9fb">
+                <h2 class="timeline_title" style="color: royalblue">Software Developer</h2>
+                <p class="timeline_text">Worked for about a year as a <b>Software Developer</b> at <b style="color: rgb(36, 35, 35)">DelegateIT</b></p>
+                <h5 class="timeline_text cd-date">June 2021</h5>
+            </div>
+        </div>
+        <!-- cd-timeline-block -->
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-varsity_collge">
+                <img src="images/varsity_college.png" alt="Avatar" style="padding-top: 2em; background-color: white; border-radius: 60%"/>
+            </div>
+            <div class="cd-timeline-content" style="background-color: #f8f9fb">
+                <h2 class="timeline_title" style="color: royalblue">Began My Degree</h2>
+                <p class="timeline_text">Began my IIE Higher Certificate in Support Services degree at IIE Varsity College</p>
+                <h5 class="timeline_text cd-date">Feb 2021</h5>
+            </div>
+        </div>
+    </div>
+</body>
 		</div>
 	</section>
 
